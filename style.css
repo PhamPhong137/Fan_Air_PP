@@ -120,8 +120,8 @@ body {
     position: absolute;
     bottom: 0;
     left: calc(var(--f-body-w) / 2);
-    transform: translateX(-50%);
-    width: 100px;
+    transform: translateX(-45%);
+    width: 150px;
     height: 40px;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
@@ -177,6 +177,11 @@ input[type="radio"] {
     --swt-color: #e74c3c;
 }
 
+.switcher[for="swt-4"] {
+    --swt-index: 4;
+    --swt-color: #2ecc71;
+}
+
 /* Tạo hiệu ứng con trỏ khi CT chưa bật */
 input:not(:checked)+.switcher {
     cursor: pointer;
@@ -210,6 +215,10 @@ input:checked+.switcher[for="swt-2"]~.f-head {
 
 input:checked+.switcher[for="swt-3"]~.f-head {
     --f-speed-rate: 3;
+}
+
+input:checked+.switcher[for="swt-4"]~.f-head {
+    --f-speed-rate: 4;
 }
 
 .fan-control {
