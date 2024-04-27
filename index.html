@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img id="ac-image" src="./assest/img/air_conditioner.png" width="100%" alt="">
+            <img id="on-image" src="./assest/img/air.png" width="100%" alt="">
+
+            <div class="fan-control">
+                <button id="btn-on">ON</button>
+                <button id="btn-off">OFF</button>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="fan">
+                <!-- thêm 4 công tắc cho quạt -->
+
+                <!-- Trạng thái mặc định là Đóng -->
+                <!-- CT Đóng -->
+                <input type="radio" checked id="swt-0" name="switcher" />
+                <label for="swt-0" class="switcher"></label>
+
+                <!-- CT Bậc 1 -->
+                <input type="radio" id="swt-1" name="switcher" />
+                <label for="swt-1" class="switcher"></label>
+
+                <!-- CT Bậc 2 -->
+                <input type="radio" id="swt-2" name="switcher" />
+                <label for="swt-2" class="switcher"></label>
+
+                <!-- CT Bậc 3 -->
+                <input type="radio" id="swt-3" name="switcher" />
+                <label for="swt-3" class="switcher"></label>
+
+                <!-- chia quạt làm 2 phần đầu và thân -->
+                <div class="f-head">
+                    <div class="f-wing">
+                        <img src="./assest/img/propeller.png" />
+                    </div>
+                </div>
+                <div class="f-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+
+</body>
+
+</html>
