@@ -215,11 +215,9 @@ input:checked+.switcher[for="swt-3"]~.f-head {
 .fan-control {
     position: absolute;
     top: 600px;
-    /* Điều chỉnh top tương ứng với vị trí mong muốn */
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    /* Đảm bảo nút điều khiển hiển thị trên hình ảnh */
 }
 
 button {
@@ -244,4 +242,25 @@ button:hover {
     left: 0;
     z-index: 1;
     display: none;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        display: block;
+    }
+    .left {
+        width: 100%;    
+    }
+
+    .right {
+        width: 100%;
+    }
+    .fan-control {
+        position: absolute;
+        top: 400px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+    
+    
 }
