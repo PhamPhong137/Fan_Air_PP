@@ -64,7 +64,7 @@ body {
     content: "";
     width: var(--f-neck-w);
     height: var(--f-neck-h);
-    background-color: #fff;
+    background-color: #ba8181;
     position: absolute;
     top: calc(var(--f-head-h) / 2);
     left: calc(var(--f-head-w) / 2 - var(--f-body-w) / 2);
@@ -103,7 +103,7 @@ body {
 .f-body {
     width: var(--f-body-w);
     height: var(--f-body-h);
-    background-color: #fff;
+    background-color: #ba8181;
 
     /* Đưa thân quạt ra chính giữa */
     position: absolute;
@@ -125,7 +125,7 @@ body {
     height: 40px;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
-    background-color: #f1c40f;
+    background-color: #5a5bb5;
 }
 
 input[type="radio"] {
@@ -255,11 +255,10 @@ button:hover {
         width: 100%;
     }
     .fan-control {
-        position: absolute;
-        top: 400px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 2;
+        top: 400px;       
+    }
+    .fan{
+        margin-left: 160px
     }
     
     
